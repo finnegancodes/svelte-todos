@@ -8,7 +8,7 @@ const createTodoStore = () => {
 
   const add = (todo) => {
     const old = get(todos);
-    set([...old, todo]);
+    set([todo, ...old]);
   };
 
   const remove = (id) => {
